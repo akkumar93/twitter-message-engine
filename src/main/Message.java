@@ -20,8 +20,14 @@ public class Message {
         this.message = message;
     }
 
-    private void containsMention(){}
-    private void containsTopic(){}
-    private void containsURL(){}
+    private Boolean containsMention(){
+        return false;
+    }
+    private Boolean containsTopic(){
+        return false;
+    }
+    private Boolean containsURL(){
+        return false;
+    }
 
 }
