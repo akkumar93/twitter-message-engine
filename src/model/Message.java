@@ -1,13 +1,18 @@
-package main;
+package model;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by aksharkumar on 1/28/16.
  */
 public class Message {
+
     private String message;
-    private String mention; //maybe store in a list for multiple mentions
-    private String URL;    //maybe store in list for multiple URLs
-    private String topic;  //store in list for multiple topics
+    private List<String> mentions= new ArrayList<String>();
+    private List<String> URLs = new ArrayList<String>(); //maybe store in a list for multiple mentions
+    private List<String> topics = new ArrayList<String>();  //store in list for multiple topics
 
     /**
      * For mentions, look for @ char, and word after that is a mention
