@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="530f2a10-4068-4126-88ca-be051dd35767" name="Default" comment="working on Message class">
+    <list default="true" id="530f2a10-4068-4126-88ca-be051dd35767" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Message.java" afterPath="$PROJECT_DIR$/src/main/Message.java" />
     </list>
@@ -38,8 +38,8 @@
       <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92167103">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.88250655">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="e#536#537#0" expanded="true" />
                 <element signature="e#574#575#0" expanded="true" />
@@ -495,6 +495,13 @@
       <option name="number" value="Default" />
       <updated>1454043100952</updated>
     </task>
+    <task id="LOCAL-00001" summary="fixed errors in contains methods">
+      <created>1454046597793</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1454046597793</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -530,7 +537,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working on Message class" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on Message class" />
+    <MESSAGE value="fixed errors in contains methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed errors in contains methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -547,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92167103">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.88250655">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
             <element signature="e#536#537#0" expanded="true" />
             <element signature="e#574#575#0" expanded="true" />

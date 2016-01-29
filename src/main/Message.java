@@ -20,8 +20,8 @@ public class Message {
         this.message = message;
     }
 
-    private Boolean containsMention(){}
-    private Boolean containsTopic(){}
-    private Boolean containsURL(){}
+    private void containsMention(){}
+    private void containsTopic(){}
+    private void containsURL(){}
 
 }
