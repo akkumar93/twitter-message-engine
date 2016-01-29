@@ -26,12 +26,15 @@ public class Message {
     }
 
     private Boolean containsMention(){
+        if(!mentions.isEmpty()) return true;
         return false;
     }
     private Boolean containsTopic(){
+        if(!topics.isEmpty()) return true;
         return false;
     }
     private Boolean containsURL(){
+        if(!URLs.isEmpty()) return true;
         return false;
     }
 
