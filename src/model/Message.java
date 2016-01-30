@@ -4,6 +4,8 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.regex.*;
+
 /**
  * Created by aksharkumar on 1/28/16.
  */
@@ -21,19 +23,24 @@ public class Message {
      *
      * Implement simple then move to edge cases.
      */
-    private Message(String message){
+    public Message(String message){
         this.message = message;
     }
 
-    private Boolean containsMention(){
+    public void parseMessage(){
+        final String mentionRegex = "";
+        final String hashtagRegex = "";
+        final String urlRegex = "";
+    }
+    public Boolean containsMention(){
         if(!mentions.isEmpty()) return true;
         return false;
     }
-    private Boolean containsTopic(){
+    public Boolean containsTopic(){
         if(!topics.isEmpty()) return true;
         return false;
     }
-    private Boolean containsURL(){
+    public Boolean containsURL(){
         if(!URLs.isEmpty()) return true;
         return false;
     }

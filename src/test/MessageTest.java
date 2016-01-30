@@ -1,5 +1,6 @@
 package test;
 
+import model.Message;
 import org.junit.*;
 import static org.junit.Assert.*;
 
@@ -8,14 +9,21 @@ import static org.junit.Assert.*;
  */
 public class MessageTest {
 
+    private Message message;
+
     @Before
     public void setUp() throws Exception {
-
+        message = new Message("Test Message");
     }
 
     @After
     public void tearDown() throws Exception {
+        message = null;
+    }
 
+    @Test
+    public void testContainsMention(){
+        assertFalse(message.containsMention());
     }
 
 
