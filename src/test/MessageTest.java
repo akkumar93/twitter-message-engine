@@ -11,20 +11,18 @@ public class MessageTest {
 
     private Message message;
 
-    @Before
-    public void setUp() throws Exception {
-        message = new Message("Test @Message");
-    }
-
-    @After
-    public void tearDown() throws Exception {
-        message = null;
+    @Test
+    public void testContainsMention(){
+        message = new Message("@akshar @kumar");
+        message.parseMessage();
+        assertTrue(message.containsMention());
     }
 
     @Test
-    public void testContainsMention(){
+    public void testContainsTopic(){
+        message = new Message("#werock");
         message.parseMessage();
-        assertTrue(message.containsMention());
+        assertTrue(message.containsTopic());
     }
 
 

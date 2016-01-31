@@ -30,7 +30,7 @@ public class Message {
 
     public void parseMessage(){
         final String mentionRegex = "[@]+([A-Za-z0-9-_]+)"; //looks for mention symbol followed by letters and numbers
-        final String hashtagRegex = "[#] + ([A-Za-z0-9-_]+)";
+        final String hashtagRegex = "[#]+([A-Za-z0-9-_]+)";
         final String urlRegex = "";
 
         String result = "";
@@ -40,13 +40,21 @@ public class Message {
 
         Matcher mentionMatcher = mentionPattern.matcher(message);
         Matcher hashtagMatcher = hashtagPattern.matcher(message);
-
-       if (mentionMatcher.find()){
+        //finds mentions
+       while(mentionMatcher.find()){
            result = mentionMatcher.group();
            result = result.replace("@", "");
            mentions.put(result, 1);
        }
+        //finds topics
+        while(hashtagMatcher.find()){
+            result = hashtagMatcher.group();
+            result = result.replace("#", "");
+            topics.put(result,1);
+        }
+        //need to implement finding URLs
     }
+    
     public Boolean containsMention(){
         if(!mentions.isEmpty()) return true;
         return false;
