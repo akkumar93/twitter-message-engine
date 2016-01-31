@@ -2,6 +2,7 @@ package model;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import java.util.regex.*;
@@ -12,9 +13,9 @@ import java.util.regex.*;
 public class Message {
 
     private String message;
-    private List<String> mentions= new ArrayList<String>();
-    private List<String> URLs = new ArrayList<String>(); //maybe store in a list for multiple mentions
-    private List<String> topics = new ArrayList<String>();  //store in list for multiple topics
+    private HashMap<String, Integer> mentions= new HashMap<String, Integer>();
+    private HashMap<String, Integer> URLs = new HashMap<String, Integer>(); //maybe store in a map for multiple mentions
+    private HashMap<String, Integer> topics = new HashMap<String, Integer>();  //store in map for multiple topics
 
     /**
      * For mentions, look for @ char, and word after that is a mention
@@ -28,9 +29,23 @@ public class Message {
     }
 
     public void parseMessage(){
-        final String mentionRegex = "";
-        final String hashtagRegex = "";
+        final String mentionRegex = "[@]+([A-Za-z0-9-_]+)"; //looks for mention symbol followed by letters and numbers
+        final String hashtagRegex = "[#] + ([A-Za-z0-9-_]+)";
         final String urlRegex = "";
+
+        String result = "";
+
+        Pattern mentionPattern = Pattern.compile(mentionRegex);
+        Pattern hashtagPattern = Pattern.compile(hashtagRegex);
+
+        Matcher mentionMatcher = mentionPattern.matcher(message);
+        Matcher hashtagMatcher = hashtagPattern.matcher(message);
+
+       if (mentionMatcher.find()){
+           result = mentionMatcher.group();
+           result = result.replace("@", "");
+           mentions.put(result, 1);
+       }
     }
     public Boolean containsMention(){
         if(!mentions.isEmpty()) return true;

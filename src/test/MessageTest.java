@@ -13,7 +13,7 @@ public class MessageTest {
 
     @Before
     public void setUp() throws Exception {
-        message = new Message("Test Message");
+        message = new Message("Test @Message");
     }
 
     @After
@@ -23,7 +23,8 @@ public class MessageTest {
 
     @Test
     public void testContainsMention(){
-        assertFalse(message.containsMention());
+        message.parseMessage();
+        assertTrue(message.containsMention());
     }
 
 
