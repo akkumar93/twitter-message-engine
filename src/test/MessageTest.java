@@ -26,6 +26,8 @@ public class MessageTest {
         message.parseMessage();
         assertEquals(1, message.numMentions());
     }
+
+    //topic tests
     @Test
     public void testContainsTopic(){
         message = new Message("#werock");
@@ -40,7 +42,14 @@ public class MessageTest {
         message.parseMessage();
         assertEquals(2, message.numTopics());
     }
-
+    //url tests
+    @Test
+    public void testContainsURL(){
+        message = new Message("http://www.twitter.com");
+        message.parseMessage();
+        assertEquals(1, message.numURLS());
+    }
+    //examples
     @Test
     public void testExampleMessage(){
         message = new Message("@peter check out this new joke I saw #cantstoplaughing");
