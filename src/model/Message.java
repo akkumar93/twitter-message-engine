@@ -54,17 +54,26 @@ public class Message {
         }
         //need to implement finding URLs
     }
-    
-    public Boolean containsMention(){
-        if(!mentions.isEmpty()) return true;
+    public int numMentions(){
+        return mentions.size();
+    }
+    public int numTopics(){
+        return topics.size();
+    }
+    public int numURLS(){
+        return URLs.size();
+    }
+
+    public Boolean containsMention(final String mention){
+        if(mentions.containsKey(mention)) return true;
         return false;
     }
-    public Boolean containsTopic(){
-        if(!topics.isEmpty()) return true;
+    public Boolean containsTopic(final String topic){
+        if(topics.containsKey(topic)) return true;
         return false;
     }
-    public Boolean containsURL(){
-        if(!URLs.isEmpty()) return true;
+    public Boolean containsURL(final String URL){
+        if(URLs.containsKey(URL)) return true;
         return false;
     }
 
