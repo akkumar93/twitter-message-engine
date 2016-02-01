@@ -29,6 +29,13 @@ public class MessageTest {
     }
 
     @Test
+    public void testInvalidTopics(){
+        message = new Message("#onetwothree #123 #@$!#4342 #jumpman23 #!$%^&*+.");
+        message.parseMessage();
+        assertEquals(2, message.numTopics());
+    }
+
+    @Test
     public void testExampleMessage(){
         message = new Message("@peter check out this new joke I saw #cantstoplaughing");
         message.parseMessage();

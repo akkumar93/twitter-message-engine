@@ -8,6 +8,19 @@ import java.util.List;
 import java.util.regex.*;
 
 /**
+ *
+ * For mentions, look for @ char, and word after that is a mention
+ * for URL, https
+ * for topic #
+ *
+ * username rules:
+ * Only alphanumeric characters and underscores
+ * Your username cannot be longer than 15 characters.
+ *
+ * hashtag rules:
+ *
+ *
+ *
  * Created by aksharkumar on 1/28/16.
  */
 public class Message {
@@ -17,20 +30,14 @@ public class Message {
     private HashMap<String, Integer> URLs = new HashMap<String, Integer>(); //maybe store in a map for multiple mentions
     private HashMap<String, Integer> topics = new HashMap<String, Integer>();  //store in map for multiple topics
 
-    /**
-     * For mentions, look for @ char, and word after that is a mention
-     * for URL, https
-     * for topic #
-     *
-     * Implement simple then move to edge cases.
-     */
+
     public Message(String message){
         this.message = message;
     }
 
     public void parseMessage(){
         final String mentionRegex = "[@]+([A-Za-z0-9-_]+)"; //looks for mention symbol followed by letters and numbers
-        final String hashtagRegex = "[#]+([A-Za-z0-9-_]+)";
+        final String hashtagRegex = "[#]+([A-Za-z]+[A-Za-z0-9-_]*)";
         final String urlRegex = "";
 
         String result = "";
@@ -54,6 +61,7 @@ public class Message {
         }
         //need to implement finding URLs
     }
+
     public int numMentions(){
         return mentions.size();
     }

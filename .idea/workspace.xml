@@ -26,28 +26,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+            <state vertical-scroll-proportion="1.226415">
+              <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#278#295#0" expanded="true" />
-                <element signature="e#354#371#0" expanded="true" />
-                <element signature="e#477#494#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#535#552#0" expanded="true" />
+                <element signature="e#611#628#0" expanded="true" />
+                <element signature="e#734#751#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
+                <element signature="e#1949#1950#0" expanded="true" />
+                <element signature="e#1985#1986#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/MessageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4699739">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,16 +81,14 @@
         <option value="$PROJECT_DIR$/src/main/MessageParser.java" />
         <option value="$PROJECT_DIR$/src/main/Message.java" />
         <option value="$PROJECT_DIR$/src/test/MessageModelTest.java" />
-        <option value="$PROJECT_DIR$/src/model/Message.java" />
         <option value="$PROJECT_DIR$/src/test/MessageTest.java" />
+        <option value="$PROJECT_DIR$/src/model/Message.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="143" />
-    <option name="y" value="43" />
-    <option name="width" value="1127" />
-    <option name="height" value="682" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -182,6 +182,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -625,43 +626,49 @@
       <option name="project" value="LOCAL" />
       <updated>1454283576947</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tests that include both hashtags and mentions">
+      <created>1454287414659</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1454287414659</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MessageTest_testContainsMention - 2016.01.31 at 16h 18m 59s.xml">
-      <configuration name="MessageTest.testContainsMention" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MessageTest_testContainsMention - 2016.01.31 at 17h 32m 22s.xml">
-      <configuration name="MessageTest.testContainsMention" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 16h 02m 19s.xml">
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 20h 11m 18s.xml">
       <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 16h 06m 18s.xml">
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 20h 12m 44s.xml">
       <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 17h 32m 45s.xml">
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 20h 18m 47s.xml">
       <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 17h 33m 02s.xml">
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 20h 23m 18s.xml">
       <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 17h 35m 44s.xml">
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 20h 53m 15s.xml">
       <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 17h 38m 52s.xml">
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 21h 00m 20s.xml">
       <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 18h 37m 59s.xml">
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 21h 11m 52s.xml">
       <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 18h 40m 35s.xml">
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 21h 38m 01s.xml">
+      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 21h 38m 11s.xml">
+      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_in_twitterMessageEngine - 2016.01.31 at 21h 39m 07s.xml">
       <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="143" y="43" width="1127" height="682" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -671,15 +678,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2795031" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32536522" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -708,11 +715,12 @@
     <MESSAGE value="started parse function" />
     <MESSAGE value="parse function can find mentions and test passes" />
     <MESSAGE value="functionality to check hashtags; multiple mentions/hashtags will be accounted for" />
-    <option name="LAST_COMMIT_MESSAGE" value="functionality to check hashtags; multiple mentions/hashtags will be accounted for" />
+    <MESSAGE value="tests that include both hashtags and mentions" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests that include both hashtags and mentions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -727,11 +735,13 @@
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#278#295#0" expanded="true" />
-            <element signature="e#354#371#0" expanded="true" />
-            <element signature="e#477#494#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#535#552#0" expanded="true" />
+            <element signature="e#611#628#0" expanded="true" />
+            <element signature="e#734#751#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,11 +762,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#278#295#0" expanded="true" />
-            <element signature="e#354#371#0" expanded="true" />
-            <element signature="e#477#494#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#535#552#0" expanded="true" />
+            <element signature="e#611#628#0" expanded="true" />
+            <element signature="e#734#751#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,27 +780,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/test/MessageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#278#295#0" expanded="true" />
-            <element signature="e#354#371#0" expanded="true" />
-            <element signature="e#477#494#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/MessageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4699739">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state vertical-scroll-proportion="1.226415">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#535#552#0" expanded="true" />
+            <element signature="e#611#628#0" expanded="true" />
+            <element signature="e#734#751#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
