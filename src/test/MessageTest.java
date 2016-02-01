@@ -11,6 +11,7 @@ public class MessageTest {
 
     private Message message;
 
+    //mention tests
     @Test
     public void testContainsMention(){
         message = new Message("@akshar @kumar");
@@ -19,7 +20,12 @@ public class MessageTest {
         assertTrue(message.containsMention("akshar"));
         assertTrue(message.containsMention("kumar"));
     }
-
+    @Test
+    public void testInvalidMentions(){
+        message = new Message("@skdjeudsoytishtdsyssssssssssssss @$%^&*! @alphanumeric_1");
+        message.parseMessage();
+        assertEquals(1, message.numMentions());
+    }
     @Test
     public void testContainsTopic(){
         message = new Message("#werock");
@@ -30,7 +36,7 @@ public class MessageTest {
 
     @Test
     public void testInvalidTopics(){
-        message = new Message("#onetwothree #123 #@$!#4342 #jumpman23 #!$%^&*+.");
+        message = new Message("#onetwothree #!$%^&*+. #123 #@$!#4342 #jumpman23");
         message.parseMessage();
         assertEquals(2, message.numTopics());
     }

@@ -51,7 +51,7 @@ public class Message {
        while(mentionMatcher.find()){
            result = mentionMatcher.group();
            result = result.replace("@", "");
-           mentions.put(result, 1);
+           if(result.length()<=15) mentions.put(result, 1);
        }
         //finds topics
         while(hashtagMatcher.find()){
