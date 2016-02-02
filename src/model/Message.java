@@ -38,7 +38,7 @@ public class Message {
     public void parseMessage(){
         final String mentionRegex = "[@]+([A-Za-z0-9-_]+)"; //looks for mention symbol followed by letters and numbers
         final String hashtagRegex = "[#]+([A-Za-z]+[A-Za-z0-9-_]*)";
-        final String urlRegex = "^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
+        final String urlRegex = "(https?)://[a-zA-Z_0-9\\-]+(\\.\\w[a-zA-Z_0-9\\-]+)+(/[#&\\n\\-=?\\+\\%/\\.\\w]+)?";
 
         String result = "";
 

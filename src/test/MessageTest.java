@@ -68,6 +68,15 @@ public class MessageTest {
         assertFalse(message.containsTopic("jokesfordays"));
     }
 
-
-
+    @Test
+    public void testExampleMessage2(){
+        message = new Message("What a game @michaeljordan - replay of your #game-winner http://www.youtube.com");
+        message.parseMessage();
+        assertEquals(1, message.numMentions());
+        assertEquals(1, message.numTopics());
+        assertEquals(1, message.numURLS());
+        assertTrue(message.containsMention("michaeljordan"));
+        assertTrue(message.containsTopic("game-winner"));
+        assertTrue(message.containsURL("http://www.youtube.com"));
+    }
 }
