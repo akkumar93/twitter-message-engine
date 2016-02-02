@@ -38,7 +38,7 @@ public class Message {
     public void parseMessage(){
         final String mentionRegex = "[@]+([A-Za-z0-9-_]+)"; //looks for mention symbol followed by letters and numbers
         final String hashtagRegex = "[#]+([A-Za-z]+[A-Za-z0-9-_]*)";
-        final String urlRegex = "\"^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]\"";
+        final String urlRegex = "^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
 
         String result = "";
 
@@ -50,11 +50,11 @@ public class Message {
         Matcher hashtagMatcher = hashtagPattern.matcher(message);
         Matcher urlMatcher = urlPattern.matcher(message);
         //finds mentions
-       while(mentionMatcher.find()){
+        while(mentionMatcher.find()){
            result = mentionMatcher.group();
            result = result.replace("@", "");
            if(result.length()<=15) mentions.put(result, 1);
-       }
+        }
         //finds topics
         while(hashtagMatcher.find()){
             result = hashtagMatcher.group();

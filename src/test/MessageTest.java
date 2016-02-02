@@ -48,6 +48,7 @@ public class MessageTest {
         message = new Message("http://www.twitter.com");
         message.parseMessage();
         assertEquals(1, message.numURLS());
+        assertTrue(message.containsURL("http://www.twitter.com"));
     }
     //examples
     @Test
