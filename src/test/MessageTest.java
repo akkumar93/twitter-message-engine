@@ -50,6 +50,12 @@ public class MessageTest {
         assertEquals(1, message.numURLS());
         assertTrue(message.containsURL("http://www.twitter.com"));
     }
+    @Test
+    public void testInvalidURL(){
+        message = new Message("htt:/www.message http://123456789 http://www.paypal.com");
+        message.parseMessage();
+        assertEquals(1, message.numURLS());
+    }
     //examples
     @Test
     public void testExampleMessage(){
