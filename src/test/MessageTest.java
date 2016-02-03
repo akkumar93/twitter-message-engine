@@ -26,7 +26,6 @@ public class MessageTest {
         message.parseMessage();
         assertEquals(1, message.numMentions());
     }
-
     //topic tests
     @Test
     public void testContainsTopic(){
@@ -42,6 +41,7 @@ public class MessageTest {
         message.parseMessage();
         assertEquals(2, message.numTopics());
     }
+
     //url tests
     @Test
     public void testContainsURL(){
@@ -56,6 +56,7 @@ public class MessageTest {
         message.parseMessage();
         assertEquals(1, message.numURLS());
     }
+
     //examples
     @Test
     public void testExampleMessage(){
@@ -78,5 +79,36 @@ public class MessageTest {
         assertTrue(message.containsMention("michaeljordan"));
         assertTrue(message.containsTopic("game-winner"));
         assertTrue(message.containsURL("http://www.youtube.com"));
+    }
+
+    @Test
+    public void testExampleMessageMultiple(){
+        message = new Message("@akshar @kumar @michaeljordan #chicago #best http://www.twitter.com https://www.amazon.com");
+        message.parseMessage();
+        assertEquals(3, message.numMentions());
+        assertEquals(2, message.numTopics());
+        assertEquals(2, message.numURLS());
+        assertTrue(message.containsMention("akshar"));
+        assertTrue(message.containsMention("kumar"));
+        assertTrue(message.containsMention("michaeljordan"));
+        assertTrue(message.containsTopic("chicago"));
+        assertTrue(message.containsTopic("best"));
+        assertTrue(message.containsURL("http://www.twitter.com"));
+        assertTrue(message.containsURL("https://www.amazon.com"));
+    }
+    @Test
+    public void testExampleMixInvalidValid(){
+        message = new Message("@supercalifragilisticexpialidocious @harold @kumar go to #whitecastle #123456 http:www.youtube.com/falsejourney http://www.youtube.com/realjourney");
+        message.parseMessage();
+        assertEquals(2, message.numMentions());
+        assertEquals(1, message.numTopics());
+        assertEquals(1, message.numURLS());
+        assertFalse(message.containsMention("supercalifragilisticexpialidocious"));
+        assertTrue(message.containsMention("harold"));
+        assertTrue(message.containsMention("kumar"));
+        assertTrue(message.containsTopic("whitecastle"));
+        assertFalse(message.containsTopic("123456"));
+        assertFalse(message.containsURL("http:www.youtube.com/falsejourney"));
+        assertTrue(message.containsURL("http://www.youtube.com/realjourney"));
     }
 }

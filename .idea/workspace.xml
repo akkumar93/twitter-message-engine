@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="530f2a10-4068-4126-88ca-be051dd35767" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Message.java" afterPath="$PROJECT_DIR$/src/model/Message.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/MessageTest.java" afterPath="$PROJECT_DIR$/src/test/MessageTest.java" />
     </list>
     <ignored path="twitterMessageEngine.iws" />
@@ -26,23 +25,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1949686">
-              <caret line="40" column="109" selection-start-line="40" selection-start-column="109" selection-end-line="40" selection-end-column="109" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#535#552#0" expanded="true" />
+                <element signature="e#611#628#0" expanded="true" />
+                <element signature="e#734#751#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MessageTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/MessageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.8490566">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,8 +78,8 @@
         <option value="$PROJECT_DIR$/src/main/MessageParser.java" />
         <option value="$PROJECT_DIR$/src/main/Message.java" />
         <option value="$PROJECT_DIR$/src/test/MessageModelTest.java" />
-        <option value="$PROJECT_DIR$/src/model/Message.java" />
         <option value="$PROJECT_DIR$/src/test/MessageTest.java" />
+        <option value="$PROJECT_DIR$/src/model/Message.java" />
       </list>
     </option>
   </component>
@@ -165,8 +169,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,7 +189,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test in twitterMessageEngine">
+  <component name="RunManager" selected="JUnit.MessageTest">
     <configuration default="false" name="test in twitterMessageEngine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -226,6 +230,32 @@
       <option name="MAIN_CLASS_NAME" value="test.MessageTest" />
       <option name="METHOD_NAME" value="testContainsMention" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="twitterMessageEngine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MessageTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -539,14 +569,16 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.test in twitterMessageEngine" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MessageTest.testContainsMention" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MessageTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.test in twitterMessageEngine" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MessageTest.testContainsMention" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MessageTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.test in twitterMessageEngine" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MessageTest.testContainsMention" />
       </list>
     </recent_temporary>
   </component>
@@ -655,39 +687,45 @@
       <option name="project" value="LOCAL" />
       <updated>1454377191753</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="wrote more tests">
+      <created>1454389031750</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1454389031750</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 18h 16m 27s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 23m 16s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 19h 18m 33s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 26m 51s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 19h 25m 57s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 33m 09s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 19h 26m 14s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 34m 07s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 21h 56m 29s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 34m 57s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 22h 06m 58s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 37m 53s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 22h 13m 00s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 38m 10s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 22h 13m 19s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 41m 52s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 22h 52m 03s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 42m 55s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_twitterMessageEngine - 2016.02.01 at 22h 52m 46s.xml">
-      <configuration name="test in twitterMessageEngine" configurationId="JUnit" />
+    <history-entry file="MessageTest - 2016.02.02 at 22h 43m 23s.xml">
+      <configuration name="MessageTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -701,7 +739,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -744,11 +782,12 @@
     <MESSAGE value="added URL functionality; test still failing" />
     <MESSAGE value="made change to regex and URL test passes correctly; todo write more tests" />
     <MESSAGE value="wrote more tests for invalid urls and examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrote more tests for invalid urls and examples" />
+    <MESSAGE value="wrote more tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="wrote more tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -760,9 +799,39 @@
     <entry file="file://$PROJECT_DIR$/src/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#535#552#0" expanded="true" />
+            <element signature="e#611#628#0" expanded="true" />
+            <element signature="e#734#751#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/MessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#535#552#0" expanded="true" />
+            <element signature="e#611#628#0" expanded="true" />
+            <element signature="e#734#751#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -783,6 +852,11 @@
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#535#552#0" expanded="true" />
+            <element signature="e#611#628#0" expanded="true" />
+            <element signature="e#734#751#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -803,6 +877,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#535#552#0" expanded="true" />
+            <element signature="e#611#628#0" expanded="true" />
+            <element signature="e#734#751#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -821,20 +900,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/MessageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#535#552#0" expanded="true" />
+            <element signature="e#611#628#0" expanded="true" />
+            <element signature="e#734#751#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/test/MessageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1949686">
-          <caret line="40" column="109" selection-start-line="40" selection-start-column="109" selection-end-line="40" selection-end-column="109" />
+        <state vertical-scroll-proportion="0.8490566">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
