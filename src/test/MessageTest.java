@@ -25,6 +25,7 @@ public class MessageTest {
         message = new Message("@skdjeudsoytishtdsyssssssssssssss @$%^&*! @alphanumeric_1");
         message.parseMessage();
         assertEquals(1, message.numMentions());
+        assertTrue(message.containsMention("alphanumeric_1"));
     }
     //topic tests
     @Test
@@ -40,6 +41,8 @@ public class MessageTest {
         message = new Message("#onetwothree #!$%^&*+. #123 #@$!#4342 #jumpman23");
         message.parseMessage();
         assertEquals(2, message.numTopics());
+        assertTrue(message.containsTopic("onetwothree"));
+        assertTrue(message.containsTopic("jumpman23"));
     }
 
     //url tests
@@ -55,6 +58,7 @@ public class MessageTest {
         message = new Message("htt:/www.message http://123456789 http://www.paypal.com");
         message.parseMessage();
         assertEquals(1, message.numURLS());
+        assertTrue(message.containsURL("http://www.paypal.com"));
     }
 
     //examples
