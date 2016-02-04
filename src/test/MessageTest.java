@@ -27,6 +27,7 @@ public class MessageTest {
         assertEquals(1, message.numMentions());
         assertTrue(message.containsMention("alphanumeric_1"));
     }
+    
     //topic tests
     @Test
     public void testContainsTopic(){
