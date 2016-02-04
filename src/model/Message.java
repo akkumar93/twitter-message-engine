@@ -18,6 +18,11 @@ import java.util.regex.*;
  * Your username cannot be longer than 15 characters.
  *
  * hashtag rules:
+ * alphanumeric characters and underscores
+ * letters must come first, and numbers cannot be by themselves
+ *
+ * URL:
+ * url must be 23 characters long
  *
  *
  *
@@ -34,10 +39,12 @@ public class Message {
     public Message(String message){
         this.message = message;
     }
-
+    //main function that parses the message for mentions, topics, and urls. Adds each to the respective map.
     public void parseMessage(){
         final String mentionRegex = "[@]+([A-Za-z0-9-_]+)"; //looks for mention symbol followed by letters and numbers
         final String hashtagRegex = "[#]+([A-Za-z]+[A-Za-z0-9-_]*)";
+
+        //URL regex used from embed.js source code
         final String urlRegex = "(https?)://[a-zA-Z_0-9\\-]+(\\.\\w[a-zA-Z_0-9\\-]+)+(/[#&\\n\\-=?\\+\\%/\\.\\w]+)?";
 
         String result = "";
@@ -68,6 +75,7 @@ public class Message {
         }
     }
 
+    //used mainly for testing the code, checks size of each map
     public int numMentions(){
         return mentions.size();
     }
@@ -78,6 +86,7 @@ public class Message {
         return URLs.size();
     }
 
+    //searches for the contents in the map
     public Boolean containsMention(final String mention){
         if(mentions.containsKey(mention)) return true;
         return false;
