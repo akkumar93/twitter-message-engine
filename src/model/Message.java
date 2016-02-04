@@ -49,10 +49,12 @@ public class Message {
 
         String result = "";
 
+        //compiles the regex which is a string so that it can then be matched against a set of characters
         Pattern mentionPattern = Pattern.compile(mentionRegex);
         Pattern hashtagPattern = Pattern.compile(hashtagRegex);
         Pattern urlPattern = Pattern.compile(urlRegex);
 
+        //matches the regex pattern to characters in the string message
         Matcher mentionMatcher = mentionPattern.matcher(message);
         Matcher hashtagMatcher = hashtagPattern.matcher(message);
         Matcher urlMatcher = urlPattern.matcher(message);
