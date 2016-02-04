@@ -5,6 +5,9 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 /**
+ * Test class for message class. Tests messages with valid and invalide mentions, topics, and urls.
+ * Also tests example messages with multiple mentions, topics, and urls in one.
+ *
  * Created by aksharkumar on 1/29/16.
  */
 public class MessageTest {
@@ -27,7 +30,7 @@ public class MessageTest {
         assertEquals(1, message.numMentions());
         assertTrue(message.containsMention("alphanumeric_1"));
     }
-    
+
     //topic tests
     @Test
     public void testContainsTopic(){
