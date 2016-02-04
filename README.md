@@ -5,7 +5,7 @@
 
 # Twitter Syntax
 
-
+    '''
     Mentions:
 
         1. The '@' denotes a mention.
@@ -32,7 +32,7 @@
 
         1. A url must be less than 23 characters in length.
         2. URL mus be properly formatted, (i.e. "http://")
-
+    '''
 
 # Parsing
 
@@ -45,7 +45,7 @@
 
 
 # Testing
-    
+
     The message class is tested for valid message examples and then
     invalid message formats. This ensures that edge cases are
     accounted for in this set up.
