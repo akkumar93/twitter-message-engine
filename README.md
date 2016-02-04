@@ -5,7 +5,7 @@
 
 # Twitter Syntax
 
-    <pre>
+
     Mentions:
 
         1. The '@' denotes a mention.
@@ -32,21 +32,20 @@
 
         1. A url must be less than 23 characters in length.
         2. URL mus be properly formatted, (i.e. "http://")
-    </pre>
+
 
 # Parsing
-    <pre>
+
     A message is parsed using Java regex compatibility. The message
     is taken in as a string and multiple regex expressions are
     compared to the string. If the string contains any mentions,
     topics, or URLs these are added to the respective hashmaps. It
     then becomes simple to look up any values in the hashmap to
     determine whether they are in the message or not.
-    </pre>
+
 
 # Testing
-    <pre>
+    
     The message class is tested for valid message examples and then
     invalid message formats. This ensures that edge cases are
     accounted for in this set up.
-    </pre>
