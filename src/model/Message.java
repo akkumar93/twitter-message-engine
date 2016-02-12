@@ -89,17 +89,8 @@ public class Message {
     }
 
     //searches for the contents in the map
-    public Boolean containsMention(final String mention){
-        if(mentions.containsKey(mention)) return true;
-        return false;
-    }
-    public Boolean containsTopic(final String topic){
-        if(topics.containsKey(topic)) return true;
-        return false;
-    }
-    public Boolean containsURL(final String URL){
-        if(URLs.containsKey(URL)) return true;
-        return false;
-    }
+    public Boolean containsMention(final String mention){ return mentions.containsKey(mention); }
+    public Boolean containsTopic(final String topic){ return topics.containsKey(topic); }
+    public Boolean containsURL(final String URL){ return URLs.containsKey(URL); }
 
 }
