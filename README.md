@@ -1,7 +1,6 @@
 # Overview
 
-    A model of a parser that determines the mentions, topics and URLs in
-    a Twitter style message.
+    A model of a parser that determines the mentions, topics and URLs in a Twitter style message.
 
 # Twitter Syntax
 
@@ -36,16 +35,10 @@
 
 # Parsing
 
-    A message is parsed using Java regex compatibility. The message
-    is taken in as a string and multiple regex expressions are
-    compared to the string. If the string contains any mentions,
-    topics, or URLs these are added to the respective hashmaps. It
-    then becomes simple to look up any values in the hashmap to
-    determine whether they are in the message or not.
+    A message is parsed using Java regex compatibility. The message is taken in as a string and multiple regex expressions       are compared to the string. If the string contains any mentions, topics, or URLs these are added to the respective           hashmaps. It then becomes simple to look up any values in the hashmap to determine whether they are in the message or        not.
 
 
 # Testing
 
-    The message class is tested for valid message examples and then
-    invalid message formats. This ensures that edge cases are
+    The message class is tested for valid message examples and then invalid message formats. This ensures that edge cases are
     accounted for in this set up.
