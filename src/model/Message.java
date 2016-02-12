@@ -63,18 +63,21 @@ public class Message {
         while(mentionMatcher.find()){
            result = mentionMatcher.group();
            result = result.replace("@", "");
-           if(result.length()<=15) mentions.put(result, 1);
+           if(!containsMention(result) && result.length()<=15) mentions.put(result, 1);
+           else mentions.put(result, mentions.get(result) + 1);
         }
         //finds topics
         while(hashtagMatcher.find()){
             result = hashtagMatcher.group();
             result = result.replace("#", "");
-            topics.put(result,1);
+            if(!containsTopic(result)) topics.put(result,1);
+            else topics.put(result, topics.get(result) + 1);
         }
         //need to implement finding URLs
         while(urlMatcher.find()){
             result = urlMatcher.group();
-            URLs.put(result, 1);
+            if(!containsURL(result)) URLs.put(result, 1);
+            else URLs.put(result, URLs.get(result) + 1);
         }
     }
 
