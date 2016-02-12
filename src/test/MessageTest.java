@@ -18,7 +18,7 @@ public class MessageTest {
     @Test
     public void testContainsMention(){
         message = new Message("@akshar @kumar");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(2, message.numMentions());
         assertTrue(message.containsMention("akshar"));
         assertTrue(message.containsMention("kumar"));
@@ -26,7 +26,7 @@ public class MessageTest {
     @Test
     public void testInvalidMentions(){
         message = new Message("@skdjeudsoytishtdsyssssssssssssss @$%^&*! @alphanumeric_1");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(1, message.numMentions());
         assertTrue(message.containsMention("alphanumeric_1"));
     }
@@ -35,7 +35,7 @@ public class MessageTest {
     @Test
     public void testContainsTopic(){
         message = new Message("#werock");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(1, message.numTopics());
         assertTrue(message.containsTopic("werock"));
     }
@@ -43,7 +43,7 @@ public class MessageTest {
     @Test
     public void testInvalidTopics(){
         message = new Message("#onetwothree #!$%^&*+. #123 #@$!#4342 #jumpman23");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(2, message.numTopics());
         assertTrue(message.containsTopic("onetwothree"));
         assertTrue(message.containsTopic("jumpman23"));
@@ -53,14 +53,14 @@ public class MessageTest {
     @Test
     public void testContainsURL(){
         message = new Message("http://www.twitter.com");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(1, message.numURLS());
         assertTrue(message.containsURL("http://www.twitter.com"));
     }
     @Test
     public void testInvalidURL(){
         message = new Message("htt:/www.message http://123456789 http://www.paypal.com");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(1, message.numURLS());
         assertTrue(message.containsURL("http://www.paypal.com"));
     }
@@ -69,7 +69,7 @@ public class MessageTest {
     @Test
     public void testExampleMessage(){
         message = new Message("@peter check out this new joke I saw #cantstoplaughing");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(1, message.numMentions());
         assertEquals(1, message.numTopics());
         assertTrue(message.containsMention("peter"));
@@ -80,7 +80,7 @@ public class MessageTest {
     @Test
     public void testExampleMessage2(){
         message = new Message("What a game @michaeljordan - replay of your #game-winner http://www.youtube.com");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(1, message.numMentions());
         assertEquals(1, message.numTopics());
         assertEquals(1, message.numURLS());
@@ -92,7 +92,7 @@ public class MessageTest {
     @Test
     public void testExampleMessageMultiple(){
         message = new Message("@akshar @kumar @michaeljordan #chicago #best http://www.twitter.com https://www.amazon.com");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(3, message.numMentions());
         assertEquals(2, message.numTopics());
         assertEquals(2, message.numURLS());
@@ -107,7 +107,7 @@ public class MessageTest {
     @Test
     public void testExampleMixInvalidValid(){
         message = new Message("@supercalifragilisticexpialidocious @harold @kumar go to #whitecastle #123456 http:www.youtube.com/falsejourney http://www.youtube.com/realjourney");
-        message.parseMessage();
+        //message.parseMessage();
         assertEquals(2, message.numMentions());
         assertEquals(1, message.numTopics());
         assertEquals(1, message.numURLS());

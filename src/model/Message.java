@@ -38,6 +38,7 @@ public class Message {
 
     public Message(String message){
         this.message = message;
+        parseMessage();
     }
     //main function that parses the message for mentions, topics, and urls. Adds each to the respective map.
     public void parseMessage(){
